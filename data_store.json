@@ -1,0 +1,91 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "username": "admin",
+      "passwordHash": "$2b$10$1QQWwYNmJDvHIPZBnj34.uBep6Gz1NrEAsOPBoYSTeR3dxnhEzd1u",
+      "name": "Security Admin",
+      "role": "admin",
+      "createdAt": "2026-08-23T13:43:57.415Z"
+    },
+    {
+      "id": "usr_alice",
+      "username": "user1",
+      "passwordHash": "$2b$10$8a7Z4S8W3.Xk2zIU2EZgJOrblp1sujDg8NEqTvdXI/hfaUpugKIKO",
+      "name": "Alice Johnson",
+      "role": "user",
+      "createdAt": "2026-08-23T13:43:57.416Z"
+    },
+    {
+      "id": "usr_bob",
+      "username": "user2",
+      "passwordHash": "$2b$10$v8LkxokQJzjDy4BeZN2PnOF8M6ySmyc7aPpHdyV.7O/Z5Gho/IFva",
+      "name": "Bob Smith",
+      "role": "user",
+      "createdAt": "2026-08-23T13:43:57.416Z"
+    }
+  ],
+  "files": [
+    {
+      "id": "file_001",
+      "filename": "confidential_project_overview.txt",
+      "originalName": "confidential_project_overview.txt",
+      "mimeType": "text/plain",
+      "size": 480,
+      "content": "CONFIDENTIAL PROJECT OVERVIEW\n\nTarget Completion: Q4 2026\nSecurity Protocols: AES-256 End-to-End Encryption enabled.\n\nNotice: This text document contains sensitive information authorized exclusively for Alice Johnson by System Administrator. Keep secret key secure at all times!",
+      "isEncrypted": false,
+      "algorithm": "AES-256-GCM",
+      "sha256Checksum": "ae2c5f1b63eb61a6d9c9deaa4e173c244ce829f4db1eb4316ca1d324bbff72c3",
+      "viewCount": 0,
+      "isExpired": false,
+      "uploaderId": "usr_admin",
+      "uploaderName": "Security Admin",
+      "uploaderRole": "admin",
+      "authorizedUserIds": [
+        "usr_alice"
+      ],
+      "description": "Authorized text file containing project overview assigned exclusively to Alice.",
+      "createdAt": "2026-08-22T13:43:57.416Z"
+    },
+    {
+      "id": "file_002",
+      "filename": "company_security_policies.txt",
+      "originalName": "company_security_policies.txt",
+      "mimeType": "text/plain",
+      "size": 620,
+      "content": "ORGANIZATION SECURITY POLICY & COMPLIANCE MANUAL\n\n1. Password Requirements: Passwords must be hashed using bcrypt before storage.\n2. File Protection: All sensitive text files (.txt) must be encrypted using AES-256.\n3. Role-Based Access: Admin assigns permissions to Data Owners.\n4. Principle of Least Privilege: Users only view files specifically assigned to them.",
+      "isEncrypted": false,
+      "algorithm": "AES-256-GCM",
+      "sha256Checksum": "6755d35227abd66996bec247d25e5e681c09185ac02df12871276860fcefbcfa",
+      "viewCount": 0,
+      "isExpired": false,
+      "uploaderId": "usr_admin",
+      "uploaderName": "Security Admin",
+      "uploaderRole": "admin",
+      "authorizedUserIds": [
+        "usr_alice",
+        "usr_bob"
+      ],
+      "description": "Global compliance and security guidelines authorized for Alice and Bob.",
+      "createdAt": "2026-08-23T01:43:57.416Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log_001",
+      "timestamp": "2026-08-22T12:43:57.416Z",
+      "action": "USER_REGISTER",
+      "performedBy": "admin",
+      "role": "admin",
+      "details": "Initial security admin and demo user accounts bootstrapped."
+    },
+    {
+      "id": "log_002",
+      "timestamp": "2026-08-22T13:43:57.416Z",
+      "action": "ACCESS_GRANTED",
+      "performedBy": "admin",
+      "role": "admin",
+      "details": "Authorized file \"confidential_project_overview.txt\" to user \"user1\" (Alice Johnson)."
+    }
+  ]
+}

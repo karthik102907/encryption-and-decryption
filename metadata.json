@@ -1,0 +1,6 @@
+{
+  "name": "Secure Text Encryption Application",
+  "description": "An advanced cryptographic text security platform featuring AES-256 (GCM/CBC), RSA-OAEP-2048 hybrid ciphers, zero-width steganography, SHA-512 hashing, HMAC, secure memory shredder, and role-based access control.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

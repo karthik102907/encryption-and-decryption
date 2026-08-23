@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0a0b0d;
+    color: #d1d5db;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  h1, h2, .font-serif {
+    font-family: 'Newsreader', serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
